@@ -1,3 +1,6 @@
+![image](https://github.com/Fastcaserogue19/A2SV-web-tasks/assets/99422160/8b5121ff-2447-4385-8324-3f414af3c03f)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
