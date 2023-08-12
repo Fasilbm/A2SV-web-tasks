@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2SV Cafe - About</title>
+  <link rel="stylesheet" href="tailwind-all.css" >
+</head>
+<body class="bg-gray-400">
+    <header class="bg-blue-800 text-gray-200 h-20 md:h-25" id="header"">
+        <nav class="flex flex-col sm:flex-row justify-between items-center h-full mx-2 sm:mx-12">
+            <div class="flex justify-between w-full items-center p-3">
+                <h1 class="font-serif text-4xl font-light">A2SV cafe</h1>
+            <div id="humburgur">
+                <img src="img/icon2.png" alt="" class="sm:hidden w-8">
+            </div>
+            </div>
+            <ul class="sm:flex flex-col sm:flex-row hidden" id="nav">
+                <li class="mx-8"><a href="index.html">Home</a></li>
+        </nav>
+    </header>
+    <!-- About Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+      <p class="text-gray-700">At A2SV Cafe, we are passionate about providing the best dining experience to our customers. Our journey started in 2010 when our founder, John Smith, had a vision of creating a place where people can enjoy great food in a welcoming environment.</p>
+      <p class="text-gray-700">Over the years, we have worked hard to curate a diverse menu that caters to different tastes and dietary preferences. Our team of talented chefs sources fresh, high-quality ingredients to create dishes that are both delicious and visually appealing.</p>
+      <p class="text-gray-700">We believe that dining is not just about the food, but also about the ambiance. That's why we have designed our cafe to provide a cozy and comfortable setting for our guests. Whether you're meeting friends, having a business lunch, or enjoying a family meal, A2SV Cafe is the perfect place to relax and indulge in culinary delights.</p>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+      <p class="text-gray-700">Our mission at A2SV Cafe is to create memorable dining experiences by offering exceptional food, warm hospitality, and a welcoming atmosphere. We strive to exceed our customers' expectations and provide a space where they can connect, unwind, and savor delicious meals.</p>
+      <p class="text-gray-700">We are committed to sustainability and make conscious choices to minimize our environmental impact. From using locally sourced ingredients to implementing eco-friendly practices, we aim to contribute to a healthier planet while serving outstanding cuisine.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+      <p class="text-gray-700">We would love to hear from you! If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us.</p>
+      <ul class="list-disc pl-6 mt-4">
+        <li class="text-gray-700">Phone: +1 (123) 456-7890</li>
+        <li class="text-gray-700">Email: info@a2svcafe.com</li>
+        <li class="text-gray-700">Address: 123 Main Street, City, State, ZIP</li>
+      </ul>
+    </section>
+  </div>
+  <script>
+    let button = document.getElementById('humburgur')
+    let nav = document.getElementById('nav')
+    let header = document.getElementById('header')
+    button.onclick = (e)=>{
+        e.preventDefault()
+        if(nav.className.includes('hidden')){
+            nav.className = "flex flex-col sm:flex-row"
+            header.className = "bg-gray-800 text-gray-200 h-40"
+        }else{
+            nav.className = "sm:flex flex-col sm:flex-row hidden"
+            header.className = "bg-gray-800 text-gray-200 h-20 sm:h-40"
+        }
+    }
+</script>
+</body>
+</html>
